@@ -14,29 +14,22 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-
-
     <link href="css/main.css" rel="stylesheet"/>
 </head>
 <body class="">
-<header class="header">
-    <div class="container">
-        <div class="header-menu">
-            <a href="" class="header-logo"></a>
+<header>
+    <div class="header">
+        <div class="container">
             <div class="header-navgroup">
                 <nav class="header-nav">
-                    <a class="header-nav__link" href="#">Prices & Services</a>
-                    <a class="header-nav__link" href="#">FAQs</a>
-                    <a class="header-nav__link" href="#">about</a>
-                    <a class="header-nav__link" href="#">Contact Us</a>
+                    <a class="header-nav__link" href="#">Оплата</a>
+                    <a class="header-nav__link" href="#">Доставка</a>
+                    <a class="header-nav__link" href="#">О нас</a>
+                    <a class="header-nav__link" href="#">Контакты</a>
                 </nav>
+                <a href="" class="header-logo header-logo_min"></a>
                 <nav class="header-contact">
-                    <a class="header-contact__tel" href="tel:+9199260825">(919) 926-0825</a>
-                    <div class="header-contact__address">7417 Knightdale Blvd, Suite 101.<br>Knightdale, NC 27545</div>
-                    <a href="" class="btn">book now</a>
+                    <div class="header-contact__address">Г. Хабаровск, ул. Льва Толстого, 1</div>
                 </nav>
             </div>
             <div class="header-menu__btn">
@@ -48,6 +41,111 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="subheader">
+            <div class="search">
+                <form action="">
+                    <input class="search__field" type="text" placeholder="Поиск">
+                </form>
+            </div>
+            <a href="" class="header-logo"></a>
+            <div class="action">
+                <a href="" class="btn btn_basket">
+                    <span class="btn_basket-label">3</span>
+                    <svg class="btn_basket-icon">
+                        <use xlink:href="img/sprite.svg#icon-te"></use>
+                    </svg>
+                    <span class="btn_basket-text">Корзина</span>
+                </a>
+                <a href="" class="btn btn_login">
+                    <svg class="btn_login-icon">
+                        <use xlink:href="img/sprite.svg#icon-te"></use>
+                    </svg>
+                    <span class="btn_basket-text">Вход</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <ul class="nav">
+        <li>
+            <a href="">Спортивное питание</a>
+            <ul>
+                <li>
+                    <a href="">Аминокислоты</a>
+                    <ul>
+                        <li><a href="">BCAA</a></li>
+                        <li><a href="">Креатин</a></li>
+                        <li><a href="">Аминокислотные комплексы</a></li>
+                        <li><a href="">Карнитин (L-карнитин)</a></li>
+                        <li><a href="">Аргинин</a></li>
+                        <li><a href="">Глютамин</a></li>
+                        <li><a href="">Цитруллин</a></li>
+                        <li><a href="">Бета-аланин</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Протеины, гейнеры</a>
+                    <ul>
+                        <li><a href="">Протеины</a></li>
+                        <li><a href="">Гейнеры</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Энергия, защита и восстановление</a>
+                    <ul>
+                        <li><a href="">Предтренировочные комплексы</a></li>
+                        <li><a href="">Для связок и суставов</a></li>
+                        <li><a href="">Повышение тестостерона, SARMs</a></li>
+                        <li><a href="">Изотоники</a></li>
+                        <li><a href="">Энергетики</a></li>
+                        <li><a href="">Пептидный комплекс</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Витамины и минералы</a>
+            <ul>
+                <li><a href="">ZMA</a></li>
+                <li><a href="">Витамины А-К</a></li>
+                <li><a href="">Минералы</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Здоровое питание</a>
+            <ul>
+                <li>
+                    <a href="">Низкокалорийные и бескалорийные продукты</a>
+                    <ul>
+                        <li><a href="">Джемы, сиропы и топпинги, соусы</a></li>
+                        <li><a href="">Арахисовая паста</a></li>
+                        <li><a href="">Сахарозаменители</a></li>
+                        <li><a href="">Каши, хлопья, гранола</a></li>
+                        <li><a href="">Мука, смеси, клетчатка</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Батончики, печенье, чипсы</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Аксессуары и экипировка</a>
+            <ul>
+                <li><a href="">Одежда, обувь</a></li>
+                <li><a href="">Шейкеры, бутылки и таблетницы</a></li>
+                <li><a href="">Аксессуары для тренировки</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Красота и долголетие</a>
+            <ul>
+                <li><a href="">Омега</a></li>
+                <li><a href="">Здоровый сон</a></li>
+                <li><a href="">Снижение веса</a></li>
+                <li><a href="">Здоровье и долголетие</a></li>
+                <li><a href="">Суперфуды</a></li>
+            </ul>
+        </li>
+    </ul>
 </header>
 <main>
     <div class="container">
