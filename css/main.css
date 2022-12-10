@@ -3584,6 +3584,60 @@ body {
 
 .header {
   background: #292929;
+  height: 42px;
+}
+
+.header-navgroup {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr-Light", sans-serif;
+  color: #fff !important;
+}
+
+.header-nav {
+  display: flex;
+  gap: 42px;
+}
+.header-nav__link {
+  color: #fff !important;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.link:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.link:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+.header-logo_min {
+  display: none;
+}
+
+.header-contact__address {
+  color: #fff !important;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-menu__btn {
+  display: none;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -3723,8 +3777,5 @@ body {
     transform: rotate(-45deg);
     top: 17px;
     left: 4px;
-  }
-  .article {
-    padding-top: 54px;
   }
 }/*# sourceMappingURL=main.css.map */

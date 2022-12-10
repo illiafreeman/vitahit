@@ -65,21 +65,63 @@ body {
     background: $text-color;
     height: 42px;
 }
-.container {
-}
 .header-navgroup {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-family: $f300;
+    color: #fff !important;
 }
 .header-nav {
-    &__link {}
+    display: flex;
+    gap: 42px;
+    &__link {
+        color: #fff !important;
+        height: 42px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        
+    }
+}
+.link{
+    &:before{
+        content: '';
+        width: 0;
+        height: 1px;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        background: #fff;
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover{
+        &:before{
+            width: 100%;
+            left: 0;
+        }
+    }
 }
 .header-logo {
-    &_min {}
+    &_min {
+        display: none;
+    }
 }
 .header-contact {
-    &__address {}
+    &__address {
+        color: #fff !important;
+        height: 42px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
 }
 .header-menu {
-    &__btn {}
+    &__btn {
+        display: none;
+    }
 }
 .subheader {
 }
