@@ -36,6 +36,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         dots: false,
         adaptiveHeight: true,
+        //autoplay: true,
+        //autoplaySpeed: 10000,
         responsive: [
             {
                 breakpoint: 1280,
@@ -55,7 +57,7 @@ $(document).ready(function () {
 
 
 
-    $('#slick_2, #slick_3').slick({
+    $('#slick_2').slick({
         slidesToShow: 3,
         dots: false,
         responsive: [

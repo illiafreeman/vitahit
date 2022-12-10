@@ -264,7 +264,8 @@ body {
 .article {
 }
 .intro {
-    padding-top: 28px;
+    padding: 28px 0 80px;
+    border-bottom: 1px solid $text-color;
     &__item {}
     &__desc {
         width: 560px;
@@ -291,6 +292,8 @@ body {
     }
     &__pic {
         width: 100%;
+        border-radius: 40px;
+
     }
     &__nav {
         width: 40px;
@@ -324,17 +327,74 @@ body {
     &_review {}
 }
 .terms {
-    &__title {}
+    padding: 80px 0 70px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    &__title {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 42px;
+        line-height: 56px;
+        letter-spacing: 0.02em;
+        font-family: $n400;
+    }
+    &__list {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li{
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding-left: 50px;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 29px;
+                height: 29px;
+                background: url(../img/icon_list.svg) no-repeat center center / contain;
+                top: -3px;
+                left: 0px;
+            }
+        }
+    }
 }
 .title {
 
     &_h2 {}
 }
 .poster {
-    &__list {}
-    &__item {}
-    &__num {}
-    &__desc {}
+    background: $text-color;
+    
+    &__list {
+        display: grid;
+        grid-template: 1fr / 1.2fr 1.5fr 1fr;
+        padding: 100px 0;
+        gap: 44px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+    &__num {
+        font-size: 60px;
+        line-height: 59px;
+        letter-spacing: 0.02em;
+        color: #B8FF3C;
+        font-family: $n700;
+    }
+    &__desc {
+        font-size: 22px;
+        line-height: 27px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-family: $f300;
+        transform: translateY(3px);
+    }
 }
 .cat {
     &__item {}

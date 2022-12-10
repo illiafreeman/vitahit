@@ -135,7 +135,7 @@ ol {
 }
 
 b, strong {
-  font-weight: 400;
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
 }
 
 i {
