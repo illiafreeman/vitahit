@@ -31,12 +31,16 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+input, 
 input:active,
 input:focus,
+textarea,
 textarea:active,
 textarea:focus,
+button,
 button:active,
 button:focus,
+label,
 label:active,
 label:focus{
     outline: none !important;
@@ -44,6 +48,8 @@ label:focus{
     -moz-outline-style: none !important;
     text-decoration: none !important;
     color: $text-color;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 
