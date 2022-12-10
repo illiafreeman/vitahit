@@ -58,6 +58,12 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 input:active,
 input:focus,
 textarea:active,
@@ -3565,18 +3571,15 @@ table th, table td {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
   color: #292929;
   font-size: 20px;
   line-height: 24px;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 1500px) {

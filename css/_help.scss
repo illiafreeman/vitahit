@@ -26,7 +26,11 @@
 *{
     box-sizing: border-box;
 }
-
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
 input:active,
 input:focus,
 textarea:active,

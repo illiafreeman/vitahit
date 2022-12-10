@@ -52,20 +52,61 @@
 
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden;
     font-family: $f400;
     color: $text-color;
     font-size: 20px;
     line-height: 24px;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-
 }
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+.header {
+}
+.container {
+}
+.header-navgroup {
+}
+.header-nav {
+    &__link {}
+}
+.header-logo {
+    &_min {}
+}
+.header-contact {
+    &__address {}
+}
+.header-menu {
+    &__btn {}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import '_query';
