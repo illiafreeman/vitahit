@@ -3582,6 +3582,10 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  background: #292929;
+}
+
 @media only screen and (max-width: 1500px) {
   .wide {
     width: 100%;
