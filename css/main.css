@@ -1,43 +1,63 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "NeutralFace-Bold";
-  src: url("../fonts/NeutralFace-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
   font-family: "NeutralFace";
   src: url("../fonts/NeutralFace.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
-  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
-  src: local("../fonts/HelveticaNeueCyr-Bold"), url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "NeutralFace-Bold";
+  src: url("../fonts/NeutralFace-Bold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Light";
   src: url("../fonts/HelveticaNeueCyr-Light.eot");
   src: local("../fonts/HelveticaNeueCyr-Light"), url("../fonts/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "HelveticaNeueCyr";
+  font-family: "HelveticaNeueCyr-Roman";
   src: url("../fonts/HelveticaNeueCyr-Roman.eot");
   src: local("../fonts/HelveticaNeueCyr-Roman"), url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "HelveticaNeueCyr-Bold";
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
+  src: local("../fonts/HelveticaNeueCyr-Bold"), url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.oh {
+  overflow: hidden;
+}
+
+.ac {
+  text-align: center;
+}
+
+.df {
+  display: flex;
+}
+
+.dfc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m0a {
+  margin: 0 auto;
+}
+
 * {
   box-sizing: border-box;
 }
 
-a:active,
-a:focus,
 input:active,
 input:focus,
 textarea:active,
@@ -50,10 +70,17 @@ label:focus {
   outline-style: none !important;
   -moz-outline-style: none !important;
   text-decoration: none !important;
+  color: #292929;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+input,
+select,
+textarea {
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
 }
 
 p {
@@ -67,6 +94,7 @@ img {
 }
 
 a,
+a *,
 a:hover,
 a:focus,
 a:visited,
@@ -74,6 +102,7 @@ a:active {
   text-decoration: none;
   position: relative;
   transition: all 0.2s ease-in-out;
+  color: #292929;
 }
 
 ul {
@@ -101,7 +130,7 @@ i {
 }
 
 table {
-  border: 1px solid #ccc;
+  border: 1px solid #292929;
   border-collapse: collapse;
   margin: 12px 0 12px;
   width: 100%;
@@ -112,30 +141,8 @@ table th {
 }
 
 table th, table td {
-  border: 1px solid #ccc;
+  border: 1px solid #292929;
   padding: 8px;
-}
-
-.oh {
-  overflow: hidden;
-}
-
-.ac {
-  text-align: center;
-}
-
-.df {
-  display: flex;
-}
-
-.dfc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.m0a {
-  margin: 0 auto;
 }
 
 /* Slider */
@@ -3562,15 +3569,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: "NeutralFace";
-  font-weight: 300;
+  font-family: "HelveticaNeueCyr-Roman", sans-serif;
+  color: #292929;
   font-size: 20px;
   line-height: 24px;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   flex-direction: column;
-  background: #F8F8F8;
 }
 
 @media only screen and (max-width: 1500px) {

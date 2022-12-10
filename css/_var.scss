@@ -6,15 +6,11 @@ $transition1: all 1s ease-in-out;
 $n400: 'NeutralFace', sans-serif;
 $n700: 'NeutralFace-Bold', sans-serif;
 
-$f300: 'NeutralFace', sans-serif;
-$f400: 'NeutralFace', sans-serif;
-$f700: 'NeutralFace', sans-serif;
+$f300: 'HelveticaNeueCyr-Light', sans-serif;
+$f400: 'HelveticaNeueCyr-Roman', sans-serif;
+$f700: 'HelveticaNeueCyr-Bold', sans-serif;
 
-$black: #292929;
-
-
-
-
+$text-color: #292929;
 
 %flex{
     display: flex;
@@ -40,99 +36,12 @@ $black: #292929;
     position: absolute;
 }
 
-
-
-*{
-    box-sizing: border-box;
-}
-
-a:active,
-a:focus,
-input:active,
-input:focus,
-textarea:active,
-textarea:focus,
-button:active,
-button:focus,
-label:active,
-label:focus{
-    outline: none !important;
-    outline-style: none !important;
-    -moz-outline-style: none !important;
-    text-decoration: none !important;
+@mixin font_min(){
+    font-size: 18px;
+    line-height: 22px;
 }
 
 
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-}
-
-input,
-select,
-textarea {
-    
-}
-
-p{
-    margin: 0 0 16px;
-}
-
-img{
-    line-height: 100%;
-    max-width: 100%;
-    display: block;
-}
-
-a,
-a:hover,
-a:focus,
-a:visited,
-a:active{
-    text-decoration: none;
-    position: relative;
-    transition: $transition;
-    //color: $black;
-}
-
-ul{
-    list-style-type: none;
-    list-style-position: inside;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-ol{
-    list-style-type: decimal;
-    list-style-position: inside;
-    display: block;
-    margin: 16px 0;
-    padding: 0;
-}
-
-b, strong{
-    font-weight: 400;
-}
-
-i{
-    font-style: italic;
-}
-
-table{
-    border: 1px solid #ccc;
-    border-collapse: collapse;
-    margin: 12px 0 12px;
-    width: 100%;
-}
-
-table th{
-    font-weight: bold;
-}
-
-table th, table td{
-    border: 1px solid #ccc;
-    padding: 8px;
-}
 
 
 

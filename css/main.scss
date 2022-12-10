@@ -1,28 +1,17 @@
 @font-face {
-    font-family: 'NeutralFace-Bold';
-    src: url('../fonts/NeutralFace-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
     font-family: 'NeutralFace';
     src: url('../fonts/NeutralFace.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'HelveticaNeueCyr';
-    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
-    src: local('../fonts/HelveticaNeueCyr-Bold'),
-        url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
-        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-family: 'NeutralFace-Bold';
+    src: url('../fonts/NeutralFace-Bold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: 'HelveticaNeueCyr';
+    font-family: 'HelveticaNeueCyr-Light';
     src: url('../fonts/HelveticaNeueCyr-Light.eot');
     src: local('../fonts/HelveticaNeueCyr-Light'),
         url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
@@ -33,7 +22,7 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'HelveticaNeueCyr';
+    font-family: 'HelveticaNeueCyr-Roman';
     src: url('../fonts/HelveticaNeueCyr-Roman.eot');
     src: local('../fonts/HelveticaNeueCyr-Roman'),
         url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
@@ -43,7 +32,17 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'HelveticaNeueCyr-Bold';
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: local('../fonts/HelveticaNeueCyr-Bold'),
+        url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @import '_var';
 @import '_help';
@@ -57,15 +56,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    font-family: 'NeutralFace';
-    font-weight: 300;
+    font-family: $f400;
+    color: $text-color;
     font-size: 20px;
     line-height: 24px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     flex-direction: column;
-    background: #F8F8F8;
+
 }
 
 
