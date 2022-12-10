@@ -1,7 +1,49 @@
 @font-face {
-    font-family: 'fontt';
-    src: url('../fonts/saudagar.ttf') format('opentype');
+    font-family: 'NeutralFace-Bold';
+    src: url('../fonts/NeutralFace-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../fonts/NeutralFace.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: local('../fonts/HelveticaNeueCyr-Bold'),
+        url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Light.eot');
+    src: local('../fonts/HelveticaNeueCyr-Light'),
+        url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+    src: local('../fonts/HelveticaNeueCyr-Roman'),
+        url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @import '_var';
 @import '_help';
@@ -15,8 +57,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    color: $black;
-    font-family: $font;
+    color: $white;
+    //font-family: 'NeutralFace';
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
