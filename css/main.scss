@@ -220,7 +220,7 @@ body {
         font-size: 12px;
         line-height: 12px;
         background: #B8FF3C;
-        top: -1px;
+        top: -2px;
         left: -26px;
         border-radius: 50%;
     }
@@ -266,14 +266,58 @@ body {
 .intro {
     padding-top: 28px;
     &__item {}
-    &__desc {}
+    &__desc {
+        width: 560px;
+    }
     &__title {
         font-size: 74px;
         line-height: 74px;
         font-family: $n700;
+        margin-bottom: 12px;
     }
-    &__subtitle {}
-    &__pic {}
+    &__subtitle {
+        font-size: 44px;
+        line-height: 58px;
+        font-family: $n400;
+        letter-spacing: 0.02em;
+        margin-bottom: 20px;
+        strong{
+            font-family: $n700;
+            font-weight: 400;
+        }
+    }
+    &__picwrap{
+        position: relative;
+    }
+    &__pic {
+        width: 100%;
+    }
+    &__nav {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: -54px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            width: 39px;
+            height: 16px;
+            transition: $transition;
+        }
+        &_prev{
+            right: 65px;
+        }
+        &_next{
+            right: 0;
+        }
+        &:hover{
+            svg{
+                fill: #B8FF3C;
+            }
+        }
+    }
 }
 .slider {
     &_intro {}

@@ -87,6 +87,7 @@ label:focus {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+  font-weight: 400;
 }
 
 input,
@@ -3765,7 +3766,7 @@ body {
   font-size: 12px;
   line-height: 12px;
   background: #B8FF3C;
-  top: -1px;
+  top: -2px;
   left: -26px;
   border-radius: 50%;
 }
@@ -3804,11 +3805,57 @@ body {
 .intro {
   padding-top: 28px;
 }
+.intro__desc {
+  width: 560px;
+}
 .intro__title {
   font-size: 74px;
   line-height: 74px;
   font-family: "NeutralFace-Bold", sans-serif;
+  margin-bottom: 12px;
 }
+.intro__subtitle {
+  font-size: 44px;
+  line-height: 58px;
+  font-family: "NeutralFace", sans-serif;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+.intro__subtitle strong {
+  font-family: "NeutralFace-Bold", sans-serif;
+  font-weight: 400;
+}
+.intro__picwrap {
+  position: relative;
+}
+.intro__pic {
+  width: 100%;
+}
+.intro__nav {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -54px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro__nav svg {
+  width: 39px;
+  height: 16px;
+  transition: all 0.2s ease-in-out;
+}
+.intro__nav_prev {
+  right: 65px;
+}
+.intro__nav_next {
+  right: 0;
+}
+.intro__nav:hover svg {
+  fill: #B8FF3C;
+}
+
 @media only screen and (max-width: 1500px) {
   .wide {
     width: 100%;

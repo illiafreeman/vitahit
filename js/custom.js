@@ -33,18 +33,28 @@ $(document).ready(function () {
     });
     /*end scroll to top*/
     $('#slick_1').slick({
-        slidesToShow: 4,
+        slidesToShow: 1,
         dots: false,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 1280,
                 settings: {
-                    slidesToShow: 1,
-                    adaptiveHeight: true
+                    dots: true,
+                    arrows: false,
                 }
             }
         ]
     });
+    $('.intro__nav_next').click(function() {
+        $('#slick_1').slick('slickNext');
+    });
+    $('.intro__nav_prev').click(function() {
+        $('#slick_1').slick('slickPrev');
+    });
+
+
+
     $('#slick_2, #slick_3').slick({
         slidesToShow: 3,
         dots: false,
