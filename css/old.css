@@ -4110,4 +4110,51 @@ body {
   .popular__item:hover .popular__name {
     color: #292929;
   }
+  .footer {
+    padding: 42px 0 32px;
+  }
+  .footer__menu {
+    display: grid;
+    grid-template: auto auto auto/1fr;
+    gap: 22px;
+  }
+  .footer__logo {
+    order: 1;
+    width: 141px;
+    height: 19px;
+  }
+  .footer__nav {
+    order: 3;
+    justify-content: flex-start;
+  }
+  .footer-contact {
+    order: 2;
+    margin-bottom: 6px;
+    gap: 8px;
+  }
+  .footer-contact__tel {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .footer-contact__address {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .footer__nav-col {
+    gap: 12px;
+  }
+  .footer__nav-link {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .footer__nav-col {
+    padding-left: 83px;
+  }
+  .footer__menu {
+    padding-bottom: 28px;
+  }
+  .footer__copy {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }/*# sourceMappingURL=old.css.map */
