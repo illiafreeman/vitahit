@@ -3814,86 +3814,95 @@ body {
   justify-content: space-between;
   position: relative;
 }
-.nav ul {
-  display: none;
-}
 .nav:hover > li > a {
   opacity: 0.3;
 }
 .nav > li {
   display: flex;
 }
+.nav > li > ul {
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  gap: 80px;
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 40px;
+  box-shadow: 0px 8px 48px 2px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease-in-out;
+}
+.nav > li > ul ul {
+  display: flex;
+}
+.nav > li > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: flex-start;
+}
+.nav > li > ul > li > a {
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
+  position: relative;
+  font-size: 17px;
+}
+.nav > li > ul > li > a:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #292929;
+  transition: all 0.2s ease-in-out;
+}
+.nav > li > ul > li > a:hover:before {
+  width: 100%;
+  left: 0;
+}
+.nav > li > ul > li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.nav > li > ul > li ul li a {
+  position: relative;
+  opacity: 0.6;
+}
+.nav > li > ul > li ul li a:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #292929;
+  transition: all 0.2s ease-in-out;
+}
+.nav > li > ul > li ul li a:hover {
+  color: #000;
+  opacity: 1;
+}
+.nav > li > ul > li ul li a:hover:before {
+  width: 100%;
+  left: 0;
+}
 .nav > li:hover > a {
   color: #000;
   opacity: 1;
 }
 .nav > li:hover > ul {
-  display: flex;
-  gap: 80px;
-  background: #fff;
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  padding: 40px;
   opacity: 1;
   visibility: visible;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-}
-.nav > li:hover > ul ul {
-  display: flex;
-}
-.nav > li:hover > ul > li {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  font-size: 15px;
-  line-height: 18px;
-  align-items: flex-start;
-}
-.nav > li:hover > ul > li > a {
-  font-family: "HelveticaNeueCyr-Bold", sans-serif;
-  position: relative;
-}
-.nav > li:hover > ul > li > a:before {
-  content: "";
-  width: 0;
-  height: 1px;
-  position: absolute;
-  bottom: -3px;
-  right: 0;
-  background: #292929;
-  transition: all 0.2s ease-in-out;
-}
-.nav > li:hover > ul > li > a:hover:before {
-  width: 100%;
-  left: 0;
-}
-.nav > li:hover > ul > li ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.nav > li:hover > ul > li ul li a {
-  position: relative;
-}
-.nav > li:hover > ul > li ul li a:before {
-  content: "";
-  width: 0;
-  height: 1px;
-  position: absolute;
-  bottom: -3px;
-  right: 0;
-  background: #292929;
-  transition: all 0.2s ease-in-out;
-}
-.nav > li:hover > ul > li ul li a:hover:before {
-  width: 100%;
-  left: 0;
+  top: 100%;
 }
 .nav > li > a {
   display: flex;
