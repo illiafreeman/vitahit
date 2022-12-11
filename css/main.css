@@ -4384,6 +4384,9 @@ body {
     transition: all 0.2s ease-in-out;
     cursor: default;
   }
+  .nav li ul .nav__back {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1280px) {
   #hamburger {
@@ -4963,13 +4966,22 @@ body {
     padding: 20px;
     gap: 0px;
   }
+  .nav.vis li {
+    align-items: stretch;
+  }
   .nav.vis li ul {
     display: none;
   }
-  .nav.vis > li {
+  .nav.vis li a {
     display: flex;
     align-items: center;
-    min-height: 40px;
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+  .nav.vis > li {
+    display: flex;
+    min-height: 46px;
   }
   .nav.vis .vis > ul {
     display: flex;
@@ -4987,7 +4999,26 @@ body {
   }
   .nav.vis .vis > ul > li {
     display: flex;
-    align-items: center;
-    min-height: 40px;
+    min-height: 46px;
+  }
+  .nav__back {
+    display: flex;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    align-items: center !important;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .nav__back:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background: url(../img/back.svg) no-repeat center center/contain;
+    top: 8px;
+    left: 5px;
   }
 }/*# sourceMappingURL=main.css.map */

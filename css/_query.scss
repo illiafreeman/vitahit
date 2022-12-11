@@ -124,6 +124,9 @@
             }
         }
     }
+    .nav li ul .nav__back{
+        display: none;
+    }
 }
 @media only screen and (max-width: 1280px) {
     
@@ -706,14 +709,22 @@ body {
     padding: 20px;
     gap: 0px;
     li{
+        align-items: stretch;
         ul{
             display: none;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            line-height: 17px;
+            text-transform: uppercase;
         }
     }
     > li{
         display: flex;
-        align-items: center;
-        min-height: 40px;
+        min-height: 46px;
+        
     }
     .vis{
         > ul{
@@ -731,13 +742,31 @@ body {
             gap: 0px;
             > li{
                 display: flex;
-                align-items: center;
-                min-height: 40px;
+                min-height: 46px;
             }
         }
     }
 }
-
+.nav__back{
+    display: flex;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    align-items: center!important;
+    cursor: pointer;
+    align-self: flex-end;
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        background: url(../img/back.svg) no-repeat center center / contain;
+        top: 8px;
+        left: 5px;
+    }
+}
 
 
 

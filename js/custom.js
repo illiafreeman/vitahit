@@ -18,6 +18,10 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).parent('li').toggleClass('vis');
     });
+    $('.nav__back').on('click', function (e) {
+        e.preventDefault();
+        $(this).parent('ul').parent('li').removeClass('vis');
+    });
     /*end top menu toggle*/
 
     /*scroll to top*/
