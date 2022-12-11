@@ -44,6 +44,12 @@ $(document).ready(function () {
                 settings: {
                     arrows: false,
                 }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true
+                }
             }
         ]
     });
