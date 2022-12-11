@@ -127,6 +127,9 @@
     .nav li ul .nav__back{
         display: none;
     }
+    .nav li.nav-contact{
+        display: none;
+    }
 }
 @media only screen and (max-width: 1280px) {
     
@@ -767,7 +770,29 @@ body {
         left: 5px;
     }
 }
-
+.nav li.nav-contact{
+    display: flex;
+    flex-direction: column;
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        border-top: 1px solid #292929;
+        margin: 20px 0 30px;
+        li{
+            a{
+                text-transform: none;
+            }
+        }
+    }
+    .nav-contact__address{
+        padding-bottom: 30px;
+    }
+    .nav-contact__tel{
+        font-family: $f700;
+        margin-bottom: 10px;
+    }
+}
 
 
 

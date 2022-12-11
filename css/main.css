@@ -4387,6 +4387,9 @@ body {
   .nav li ul .nav__back {
     display: none;
   }
+  .nav li.nav-contact {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1280px) {
   #hamburger {
@@ -5020,5 +5023,26 @@ body {
     background: url(../img/back.svg) no-repeat center center/contain;
     top: 8px;
     left: 5px;
+  }
+  .nav li.nav-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav li.nav-contact ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    border-top: 1px solid #292929;
+    margin: 20px 0 30px;
+  }
+  .nav li.nav-contact ul li a {
+    text-transform: none;
+  }
+  .nav li.nav-contact .nav-contact__address {
+    padding-bottom: 30px;
+  }
+  .nav li.nav-contact .nav-contact__tel {
+    font-family: "HelveticaNeueCyr-Bold", sans-serif;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
