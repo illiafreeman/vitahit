@@ -4811,4 +4811,26 @@ body {
     font-size: 12px;
     line-height: 12px;
   }
+  .title_h2 {
+    margin-bottom: 24px;
+  }
+  .why__wrap {
+    grid-template: auto auto auto/1fr;
+    gap: 10px;
+  }
+  .why__pic {
+    grid-area: auto;
+    order: 1;
+    height: 40vw;
+    border-radius: 20px;
+  }
+  .why__desc {
+    order: 2;
+    border-radius: 20px;
+    padding: 18px;
+  }
+  .why__title, .why__text {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
