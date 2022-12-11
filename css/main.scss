@@ -129,6 +129,7 @@ body {
 }
 .subheader {
     height: 88px;
+    gap: 80px;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr auto 1fr;
@@ -145,14 +146,21 @@ body {
         background: url(../img/icon_search.svg) no-repeat center center / contain;
         top: 13px;
         left: 15px;
+        z-index: -1;
     }
     &__field {
-        border: 1px solid #5C5C5C;
+        border: 1px solid transparent;
         border-radius: 40px;
         height: 40px;
         padding: 0 40px;
         display: flex;
         align-items: center;
+        transition: $transition;
+        width: 100px;
+        cursor: pointer;
+        background: transparent;
+        padding-right: 0;
+        font-size: 16px;
         &::placeholder {
             color: #9B9B9B;
             text-transform: uppercase;
@@ -160,6 +168,13 @@ body {
             line-height: 18px;
             font-family: $f300;
             opacity: 1;
+        }
+        &:focus, &:not(:placeholder-shown) {
+            border: 1px solid #5C5C5C;
+            width: 400px;
+            padding-right: 40px;
+            cursor: text;
+            font-size: 16px;
         }
     }
 }
@@ -240,17 +255,98 @@ body {
     height: 84px;
     display: flex;
     justify-content: space-between;
+    position: relative;
     ul{
         display: none;
-        
     }
+    
     &:hover{
         > li > a{
-            opacity: .7;
+            opacity: .3;
         }
     }
     > li{
         display: flex;
+        &:hover{
+            > a{
+                color: #000;
+                opacity: 1;
+            }
+            > ul{
+                display: flex;
+                gap: 80px;
+                background: #fff;
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                top: 100%;
+                left: 0;
+                right: 0;
+                z-index: 100;
+                padding: 40px;
+                opacity: 1;
+                visibility: visible;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+                ul{
+                    display: flex;
+                }
+                > li{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    font-size: 15px;
+                    line-height: 18px;
+                    align-items: flex-start;
+                    > a{
+                        font-family: $f700;
+                        position: relative;
+                        &:before{
+                            content: '';
+                            width: 0;
+                            height: 1px;
+                            position: absolute;
+                            bottom: -3px;
+                            right: 0;
+                            background: $text-color;
+                            transition: all 0.2s ease-in-out;
+                        }
+                        &:hover{
+                            &:before{
+                                width: 100%;
+                                left: 0;
+                            }
+                        }
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        li{
+                            a{
+                                position: relative;
+                                &:before{
+                                    content: '';
+                                    width: 0;
+                                    height: 1px;
+                                    position: absolute;
+                                    bottom: -3px;
+                                    right: 0;
+                                    background: $text-color;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                                &:hover{
+                                    &:before{
+                                        width: 100%;
+                                        left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         > a{
             display: flex;
             justify-content: center;
@@ -261,8 +357,7 @@ body {
             color: #5C5C5C;
             transition: $transition;
             &:hover{
-                color: #000;
-                opacity: 1;
+                
             }
         }
     }
