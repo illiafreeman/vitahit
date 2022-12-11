@@ -57,16 +57,41 @@ $(document).ready(function () {
 
 
 
-    $('#slick_2').slick({
+    $('#slick_2').slick({     
         slidesToShow: 3,
         dots: false,
+        arrows: false,
+        centerMode: false,
+        variableWidth: false,
+        infinite: false,
+        focusOnSelect: false,
+        adaptiveHeight: true,
+
         responsive: [
             {
-                breakpoint: 1280,
+            breakpoint: 1168,
                 settings: {
                     slidesToShow: 1,
+                    dots: true,
+                    arrows: false,
+                    centerMode: true,
+                    variableWidth: true,
+                    infinite: true,
+                    focusOnSelect: true,
                 }
-            }
+            },
+            {
+            breakpoint: 590,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                    adaptiveHeight: true,
+
+                }
+            }                   
         ]
     });
 });

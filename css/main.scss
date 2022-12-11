@@ -171,7 +171,7 @@ body {
     gap: 28px;
 }
 .btn {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 0 36px;
@@ -185,6 +185,12 @@ body {
     text-transform: uppercase;
     &:hover{
         background: #92E801;
+    }
+    &_big{
+        font-size: 20px;
+        line-height: 16px;
+        height: 64px;
+        padding: 0 56px;
     }
     &_basket {
         height: auto;
@@ -324,7 +330,9 @@ body {
 }
 .slider {
     &_intro {}
-    &_review {}
+    &_review {
+        margin-bottom: 44px;
+    }
 }
 .terms {
     padding: 80px 0 70px;
@@ -512,10 +520,46 @@ body {
     }
 }
 .review {
-    &__item {}
-    &__pic {}
-    &__name {}
-    &__text {}
+    padding: 80px 0;
+    .slick-track {
+        display: flex;
+    }
+    &__item {
+        margin: 0 10px;
+        border: 1px solid $text-color;
+        border-radius: 40px;
+        padding: 30px;
+        height: unset;
+    }
+    &__picwrap{
+        width: 68px;
+        height: 68px;
+        background: #CFFF7B;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__pic {
+        
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-family: $f700;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.04em;
+    }
 }
 .ac {
 }
