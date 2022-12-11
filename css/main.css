@@ -4274,7 +4274,7 @@ body {
   z-index: 6;
 }
 
-.slick-slide.slick-current.slick-active {
+.slick-slide {
   outline: none !important;
   outline-style: none !important;
   -moz-outline-style: none !important;
@@ -4885,7 +4885,7 @@ body {
     font-size: 12px;
     line-height: 12px;
     height: 46px;
-    padding: 0 20px;
+    padding: 16px 20px;
   }
   .popular .title_h2 {
     width: 200px;
