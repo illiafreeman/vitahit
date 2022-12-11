@@ -4312,7 +4312,7 @@ body {
   height: 1px;
   position: absolute;
   bottom: -3px;
-  right: 0;
+  left: 0;
   background: #B8FF3C;
   transition: all 0.2s ease-in-out;
 }
@@ -4321,7 +4321,8 @@ body {
 }
 .footer__copylink a:hover:before {
   width: 0;
-  left: 0;
+  right: 0;
+  left: auto;
 }
 
 .footer-contact {
