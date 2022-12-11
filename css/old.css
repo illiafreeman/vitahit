@@ -3980,4 +3980,48 @@ body {
     width: 200px;
     text-align: center;
   }
+  .cat {
+    gap: 10px;
+    grid-template: 1fr 1fr 1fr/1fr 1fr;
+  }
+  .cat__item {
+    border-radius: 20px;
+  }
+  .cat__item:nth-child(2) {
+    grid-column: 1/span 2;
+    order: 3;
+  }
+  .cat__item:nth-child(2) .cat__name {
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .cat__item:nth-child(1) {
+    order: 1;
+  }
+  .cat__item:nth-child(1) .cat__name {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .cat__item:nth-child(3) {
+    order: 2;
+  }
+  .cat__item:nth-child(4) {
+    order: 4;
+  }
+  .cat__item:nth-child(5) {
+    order: 5;
+  }
+  .cat__name {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }/*# sourceMappingURL=old.css.map */
