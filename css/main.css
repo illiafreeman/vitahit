@@ -4092,7 +4092,7 @@ body {
 }
 
 .popular {
-  padding: 80px 0;
+  padding: 80px 0 140px;
 }
 .popular__list {
   display: grid;
@@ -4134,6 +4134,121 @@ body {
   text-transform: uppercase;
   font-family: "HelveticaNeueCyr-Bold", sans-serif;
   text-align: center;
+}
+
+.footer {
+  background: #292929;
+  padding: 80px 0;
+  color: #fff;
+}
+.footer__menu {
+  display: grid;
+  grid-template: 1fr/220px auto 270px;
+  gap: 20px;
+  align-items: start;
+  padding-bottom: 46px;
+  border-bottom: 1px solid #949494;
+  margin-bottom: 28px;
+}
+.footer__logo {
+  display: block;
+  width: 220px;
+  height: 30px;
+  background: url(../img/logo_footer.svg) no-repeat center center/contain;
+}
+.footer__nav {
+  display: flex;
+}
+.footer__nav-col {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  padding-left: 112px;
+  align-items: flex-start;
+}
+.footer__nav-link {
+  color: #fff !important;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.footer__nav-link:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.footer__nav-link:hover:before {
+  width: 100%;
+  left: 0;
+}
+.footer__copy {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-family: "HelveticaNeueCyr-Light", sans-serif;
+  display: flex;
+}
+.footer__copylink a {
+  color: #B8FF3C !important;
+  position: relative;
+}
+.footer__copylink a:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #B8FF3C;
+  transition: all 0.2s ease-in-out;
+}
+.footer__copylink a:hover {
+  color: #B8FF3C;
+}
+.footer__copylink a:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.footer-contact__tel {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #B8FF3C;
+  font-family: "HelveticaNeueCyr-Bold", sans-serif;
+}
+.footer-contact__tel:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background: #B8FF3C;
+  transition: all 0.2s ease-in-out;
+}
+.footer-contact__tel:hover {
+  color: #B8FF3C;
+}
+.footer-contact__tel:hover:before {
+  width: 100%;
+  left: 0;
+}
+.footer-contact__address {
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
 }
 
 .scroll-top {
