@@ -4274,6 +4274,14 @@ body {
   z-index: 6;
 }
 
+.slick-slide.slick-current.slick-active {
+  border: 0 !important;
+  outline: none !important;
+  outline-style: none !important;
+  -moz-outline-style: none !important;
+  box-shadow: none !important;
+}
+
 @media only screen and (min-width: 768px) {
   .nav {
     height: 84px;
