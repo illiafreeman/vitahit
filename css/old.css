@@ -3853,12 +3853,15 @@ body {
   }
   .search__field::-moz-placeholder {
     font-size: 12px;
+    line-height: 32px;
   }
   .search__field:-ms-input-placeholder {
     font-size: 12px;
+    line-height: 32px;
   }
   .search__field::placeholder {
     font-size: 12px;
+    line-height: 32px;
   }
   .search__field:not(:-moz-placeholder-shown) {
     width: 180px;
@@ -3896,7 +3899,8 @@ body {
     display: none;
   }
   .action {
-    gap: 20px;
+    gap: 12px;
+    transform: translateX(5px);
   }
   .btn_basket-label {
     top: -3px;
@@ -3905,7 +3909,7 @@ body {
     z-index: 10;
   }
   .intro {
-    padding: 42px 0 0;
+    padding: 42px 0 0 !important;
   }
   .intro__title {
     font-size: 37px;
@@ -4045,5 +4049,65 @@ body {
   .why__title, .why__text {
     font-size: 12px;
     line-height: 15px;
+  }
+  .slider.slider_review {
+    margin: 0 -20px 62px;
+  }
+  .review__item {
+    margin: 0 5px;
+    border-radius: 20px;
+    padding: 14px 12px;
+  }
+  .review__picwrap {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 7px;
+  }
+  .review__pic {
+    width: 15px;
+    height: 15px;
+  }
+  .review__name {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 7px;
+  }
+  .review__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .btn_big {
+    font-size: 12px;
+    line-height: 15px;
+    height: 46px;
+    padding: 0 20px;
+  }
+  .popular .title_h2 {
+    width: 200px;
+  }
+  .popular__picwrap {
+    border-radius: 20px;
+    height: 180px;
+    margin-bottom: 8px;
+  }
+  .popular__name {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 10px;
+  }
+  .popular__pic {
+    max-width: 125px;
+    max-height: 145px;
+  }
+  .popular__list {
+    grid-template: repeat(3, auto)/repeat(2, 1fr);
+    gap: 16px 10px;
+  }
+  .popular__item:hover .popular__picwrap {
+    border-color: #292929;
+    box-shadow: none;
+  }
+  .popular__item:hover .popular__name {
+    color: #292929;
   }
 }/*# sourceMappingURL=old.css.map */
