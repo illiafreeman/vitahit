@@ -4136,6 +4136,26 @@ body {
   text-align: center;
 }
 
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: -50px;
+  right: 30px;
+  background-image: url(../img/icon_top.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.scroll-top.vis {
+  bottom: 50px;
+  right: 30px;
+  opacity: 1;
+  z-index: 6;
+}
+
 @media only screen and (max-width: 1500px) {
   .wide {
     width: 100%;
