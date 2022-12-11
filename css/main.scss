@@ -446,7 +446,7 @@ body {
     grid-template: 1fr / 1fr 1fr;
     &__title {
         grid-area: 1 / 1 / 2 / 2;
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
     &__list {
         grid-area: 1 / 2 / 2 / 3;

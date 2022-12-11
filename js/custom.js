@@ -42,7 +42,6 @@ $(document).ready(function () {
             {
                 breakpoint: 1280,
                 settings: {
-                    dots: true,
                     arrows: false,
                 }
             }
@@ -69,29 +68,16 @@ $(document).ready(function () {
 
         responsive: [
             {
-            breakpoint: 1168,
+            breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     dots: true,
                     arrows: false,
                     centerMode: true,
-                    variableWidth: true,
                     infinite: true,
                     focusOnSelect: true,
                 }
-            },
-            {
-            breakpoint: 590,
-                settings: {
-                    dots: true,
-                    arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    variableWidth: false,
-                    adaptiveHeight: true,
-
-                }
-            }                   
+            }                  
         ]
     });
 });
