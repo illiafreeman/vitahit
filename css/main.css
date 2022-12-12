@@ -4107,9 +4107,6 @@ body {
 .popular__item:hover .popular__pic {
   transform: scale(1.1);
 }
-.popular__item:hover .popular__name {
-  color: #B8FF3C;
-}
 .popular__picwrap {
   border: 1px solid #292929;
   border-radius: 40px;
