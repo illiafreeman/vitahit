@@ -4767,7 +4767,7 @@ body {
   .terms__list li:before {
     width: 22px;
     height: 22px;
-    top: 6px;
+    top: 5px;
     left: 0px;
   }
   .poster__list {
@@ -4851,7 +4851,7 @@ body {
   .why__desc {
     order: 2;
     border-radius: 20px;
-    padding: 18px;
+    padding: 22px 20px;
   }
   .why__title, .why__text {
     font-size: 14px;
@@ -4901,9 +4901,9 @@ body {
     margin-bottom: 8px;
   }
   .popular__name {
-    font-size: 12px;
-    line-height: 15px;
-    padding: 0 10px;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0 5px;
   }
   .popular__pic {
     max-width: 125px;
@@ -4926,7 +4926,7 @@ body {
   .footer__menu {
     display: grid;
     grid-template: auto auto auto/1fr;
-    gap: 22px;
+    gap: 24px;
   }
   .footer__logo {
     order: 1;
@@ -4947,7 +4947,7 @@ body {
     line-height: 17px;
   }
   .footer-contact__address {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 14px;
   }
   .footer__nav-col {
