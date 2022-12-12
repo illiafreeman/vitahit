@@ -48,8 +48,6 @@
 @import '_help';
 @import '_slick';
 @import '_slick-theme';
-@import '_animate';
-
 
 body {
     font-family: $f400;
@@ -83,7 +81,6 @@ body {
         justify-content: center;
         align-items: center;
         display: flex;
-        
     }
 }
 .link{
@@ -738,33 +735,5 @@ body {
     -moz-outline-style: none !important;
     box-shadow: none !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import '_query';
