@@ -3924,6 +3924,10 @@ body {
   .footer {
     padding: 60px 0 28px;
   }
+  .intro__pic {
+    width: 100%;
+    height: 300px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .header, .header-navgroup {
@@ -4361,5 +4365,9 @@ body {
   .nav li.nav-contact .nav-contact__tel {
     font-family: "HelveticaNeueCyr-Bold", sans-serif;
     margin-bottom: 10px;
+  }
+  .intro__pic {
+    width: 100%;
+    height: 200px;
   }
 }/*# sourceMappingURL=old.css.map */
