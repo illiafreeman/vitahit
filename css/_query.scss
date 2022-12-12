@@ -613,11 +613,14 @@ body {
     border-radius: 20px;
     padding: 22px 20px;
 }
-.why__title, .why__text {
-    font-size: 14px;
-    line-height: 16px;
+.why__text {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.2px;
 }
 .why__title{
+    font-size: 14px;
+    line-height: 16px;
     margin-bottom: 5px;
 }
 .slider.slider_review{
