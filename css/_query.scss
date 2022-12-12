@@ -518,15 +518,15 @@ body {
     grid-area: auto;
 }
 .terms__list li{
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 15px;
+    line-height: 17px;
     letter-spacing: 0.04em;
     padding-left: 43px;
-    width: 222px;
+    width: 276px;
     &:before {
         width: 22px;
         height: 22px;
-        top: 3px;
+        top: 6px;
         left: 0px;
     }
 }
@@ -567,8 +567,8 @@ body {
         bottom: auto;
         right: auto;
         transform: translate(-50%, -50%);
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 15px;
+        line-height: 20px;
         text-align: center;
     } 
 }
@@ -578,8 +578,8 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 12px;
-        line-height: 12px;
+        font-size: 15px;
+        line-height: 20px;
     }  
 }
 .cat__item:nth-child(3) {
@@ -592,8 +592,8 @@ body {
     order: 5;
 }
 .cat__name {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 20px;
 }
 .title_h2 {
     margin-bottom: 24px;
@@ -614,11 +614,11 @@ body {
     padding: 18px;
 }
 .why__title, .why__text {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 16px;
 }
-.review {
-    
+.why__title{
+    margin-bottom: 5px;
 }
 .slider.slider_review{
     margin: 0 -20px 62px;
@@ -638,13 +638,13 @@ body {
     height: 15px;
 }
 .review__name {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 17px;
     margin-bottom: 7px;
 }
 .review__text {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 16px;
 }
 .btn_big {
     font-size: 12px;
@@ -713,14 +713,14 @@ body {
     line-height: 14px;
 }
 .footer__nav-col {
-    gap: 12px;
+    gap: 22px;
 }
 .footer__nav-link {
-    font-size: 10px;
-    line-height: 12px
+    font-size: 13px;
+    line-height: 15px
 }
 .footer__nav-col {
-    padding-left: 83px;
+    padding-left: 47px;
 }
 .footer__menu {
     padding-bottom: 28px;
