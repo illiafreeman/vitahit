@@ -356,6 +356,7 @@ body {
         letter-spacing: 0.02em;
         font-family: $n400;
         margin-bottom: 62px;
+        color: $text-color;
     }
 }
 .poster {
@@ -500,6 +501,9 @@ body {
             height: 100%;
             object-fit: cover;
         }
+    }
+    .title_h2{
+        color: #fff;
     }
 }
 .review {

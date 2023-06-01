@@ -45,7 +45,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         dots: false,
         adaptiveHeight: true,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 10000,
         responsive: [
             {
