@@ -80,7 +80,7 @@ $(document).ready(function () {
         infinite: false,
         focusOnSelect: false,
         adaptiveHeight: true,
-
+        adaptiveHeight: true,
         responsive: [
             {
             breakpoint: 768,
