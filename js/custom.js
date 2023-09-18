@@ -72,7 +72,7 @@ $(document).ready(function () {
 
 
     $('#slick_2').slick({     
-        slidesToShow: 3,
+        slidesToShow: 2.5,
         dots: false,
         arrows: false,
         centerMode: false,
@@ -81,6 +81,7 @@ $(document).ready(function () {
         focusOnSelect: false,
         adaptiveHeight: true,
         adaptiveHeight: true,
+        swipeToSlide: true,
         responsive: [
             {
             breakpoint: 768,
