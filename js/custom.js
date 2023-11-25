@@ -14,7 +14,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(this).parent('li').toggleClass('vis');
     });
-    $('.nav > li > ul > li> a').on('click', function (e) {
+    $('.nav > li > ul > li > a:not(".link")').on('click', function (e) {
         e.preventDefault();
         $(this).parent('li').toggleClass('vis');
     });
