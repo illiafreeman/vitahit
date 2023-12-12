@@ -524,6 +524,7 @@ body {
   background: transparent;
   padding-right: 0;
   font-size: 16px;
+  box-shadow: none !important;
 }
 .search__field::-moz-placeholder {
   color: #9B9B9B;
