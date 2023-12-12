@@ -1223,6 +1223,12 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) {
+  .search__field:not(:-moz-placeholder-shown) {
+    width: 200px !important;
+  }
+  .search__field:focus, .search__field:not(:placeholder-shown) {
+    width: 200px !important;
+  }
   #hamburger {
     width: 24px;
     height: 18px;
