@@ -816,6 +816,9 @@ body {
         li{
             a{
                 text-transform: none;
+                &::before{
+                    display: none;
+                }
             }
         }
     }

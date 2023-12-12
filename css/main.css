@@ -1868,6 +1868,9 @@ body {
   .nav li.nav-contact ul li a {
     text-transform: none;
   }
+  .nav li.nav-contact ul li a::before {
+    display: none;
+  }
   .nav li.nav-contact .nav-contact__address {
     padding-bottom: 30px;
   }
