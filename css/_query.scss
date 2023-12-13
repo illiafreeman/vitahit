@@ -132,8 +132,9 @@
     }
 }
 @media only screen and (max-width: 1280px) {
-    .search__field:focus, .search__field:not(:placeholder-shown) {
+    .subheader input[type="search"].search__field:focus, .subheader input[type="search"].search__field:not(:placeholder-shown) {
         width: 200px !important;
+        box-shadow: none !important;
     }
 // hamburger
     #hamburger {

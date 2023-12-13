@@ -1224,11 +1224,13 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) {
-  .search__field:not(:-moz-placeholder-shown) {
+  .subheader input[type=search].search__field:not(:-moz-placeholder-shown) {
     width: 200px !important;
+    box-shadow: none !important;
   }
-  .search__field:focus, .search__field:not(:placeholder-shown) {
+  .subheader input[type=search].search__field:focus, .subheader input[type=search].search__field:not(:placeholder-shown) {
     width: 200px !important;
+    box-shadow: none !important;
   }
   #hamburger {
     width: 24px;
