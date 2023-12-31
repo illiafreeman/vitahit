@@ -518,14 +518,15 @@ body {
   z-index: -1;
 }
 .search__field {
-  border: 1px solid transparent;
-  border-radius: 40px;
-  height: 40px;
-  padding: 0 40px;
+  border: 1px solid transparent !important;
+  border-radius: 40px !important;
+  height: 40px !important;
+  min-height: none !important;
+  padding: 0 40px !important;
   display: flex;
   align-items: center;
   transition: all 0.2s ease-in-out;
-  width: 100px;
+  width: 180px !important;
   cursor: pointer;
   background: transparent;
   padding-right: 0;
@@ -549,16 +550,16 @@ body {
   opacity: 1;
 }
 .search__field:not(:-moz-placeholder-shown) {
-  border: 1px solid #5C5C5C;
-  width: 400px;
-  padding-right: 40px;
+  border: 1px solid #5C5C5C !important;
+  width: 400px !important;
+  padding-right: 40px !important;
   cursor: text;
   font-size: 16px;
 }
 .search__field:focus, .search__field:not(:placeholder-shown) {
-  border: 1px solid #5C5C5C;
-  width: 400px;
-  padding-right: 40px;
+  border: 1px solid #5C5C5C !important;
+  width: 400px !important;
+  padding-right: 40px !important;
   cursor: text;
   font-size: 16px;
 }
@@ -1302,10 +1303,10 @@ body {
     gap: 20px;
   }
   .search__field:not(:-moz-placeholder-shown) {
-    width: 180px;
+    width: 180px !important;
   }
   .search__field:focus, .search__field:not(:placeholder-shown) {
-    width: 180px;
+    width: 180px !important;
   }
   .intro__title {
     font-size: 54px;
@@ -1489,20 +1490,20 @@ body {
     background: url(../img/logo_footer.svg) no-repeat center center/contain;
   }
   .search__field {
-    border: 1px solid #292929;
-    border-radius: 40px;
-    height: 32px;
-    padding: 0 40px;
-    width: 180px;
-    font-size: 12px;
+    border: 1px solid #292929 !important;
+    border-radius: 40px !important;
+    height: 32px !important;
+    padding: 0 40px !important;
+    width: 180px !important;
+    font-size: 12px !important;
   }
   .search__field::-moz-placeholder {
-    font-size: 12px;
-    line-height: 32px;
+    font-size: 12px !important;
+    line-height: 32px !important;
   }
   .search__field::placeholder {
-    font-size: 12px;
-    line-height: 32px;
+    font-size: 12px !important;
+    line-height: 32px !important;
   }
   .search__field:not(:-moz-placeholder-shown) {
     width: 180px;
