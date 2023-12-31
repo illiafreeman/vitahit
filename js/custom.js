@@ -6,7 +6,7 @@ $(document).ready(function () {
         $(this).toggleClass('close');
         $('.nav').toggleClass('vis');
         $('body').toggleClass('oh');
-        $('header').toggleClass('ohx');
+        $('html').toggleClass('ohx');
         $('#hamburger').toggleClass('open');
         $('li.vis').removeClass('vis');
     });
