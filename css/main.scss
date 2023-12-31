@@ -48,7 +48,9 @@
 @import '_help';
 @import '_slick';
 @import '_slick-theme';
-
+html{
+    overflow-x:hidden;
+}
 body {
     font-family: $f400;
     color: $text-color;

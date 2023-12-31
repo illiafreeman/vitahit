@@ -412,6 +412,10 @@ table th, table td {
   color: black;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "HelveticaNeueCyr-Roman", sans-serif;
   color: #292929;
